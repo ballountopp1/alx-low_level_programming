@@ -25,6 +25,7 @@ void rev_string(char *n)
 		*(n + i) = temp;
 	}
 }
+
 /**
  * infinite_add - add 2 numbers together
  * @n1: text representation of 1st number to add
@@ -66,7 +67,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			return (0);
 		*(r + digits) = (temp_tot % 10) + '0';
 		digits++;
-		j--;														
+		j--;
 		i--;
 	}
 	if (digits == size_r)
@@ -74,15 +75,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	*(r + digits) = '\0';
 	rev_string(r);
 	return (r);
+
 }
-
-
-
-
-
-
-
-
-
-
-
